@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Main.cs",
+              "RelativeDocumentMoniker": "Lost-n-Found\\Main.cs",
+              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Main.cs [Design]*",
+              "RelativeToolTip": "Lost-n-Found\\Main.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T17:08:28.125Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
