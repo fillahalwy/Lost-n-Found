@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\models\\database\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\models\\database\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\views\\loginform\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\loginform\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\controllers\\usercontrollers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\controllers\\usercontrollers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\models\\database\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\models\\database\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\views\\loginform\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -71,8 +71,12 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RegisterPage.cs [Design]",
               "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs",
               "RelativeDocumentMoniker": "Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs",
@@ -84,20 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DatabaseConnection.cs",
               "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Database\\DatabaseConnection.cs",
               "RelativeDocumentMoniker": "Lost-n-Found\\Models\\Database\\DatabaseConnection.cs",
               "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Database\\DatabaseConnection.cs",
               "RelativeToolTip": "Lost-n-Found\\Models\\Database\\DatabaseConnection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T05:52:33.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoginController.cs",
               "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\UserControllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Lost-n-Found\\Controllers\\UserControllers\\LoginController.cs",
@@ -110,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RegisterController.cs",
               "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\UserControllers\\RegisterController.cs",
               "RelativeDocumentMoniker": "Lost-n-Found\\Controllers\\UserControllers\\RegisterController.cs",
@@ -120,10 +124,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T05:45:53.862Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
@@ -159,7 +159,8 @@
               "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\Home\\AddItems.cs [Design]",
               "RelativeToolTip": "Lost-n-Found\\Views\\Home\\AddItems.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T13:45:01.479Z"
+              "WhenOpened": "2024-12-08T13:45:01.479Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -170,7 +171,8 @@
               "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\Home\\EditItem.cs [Design]",
               "RelativeToolTip": "Lost-n-Found\\Views\\Home\\EditItem.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T13:45:19.469Z"
+              "WhenOpened": "2024-12-08T13:45:19.469Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -194,7 +196,8 @@
               "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\Home\\HomePage.cs [Design]",
               "RelativeToolTip": "Lost-n-Found\\Views\\Home\\HomePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:36:22.245Z"
+              "WhenOpened": "2024-12-08T15:36:22.245Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
