@@ -38,7 +38,7 @@ namespace Lost_n_Found
             }
             else
             {
-                loadView(profilePage);
+                loadView(register);
             }
         }
 

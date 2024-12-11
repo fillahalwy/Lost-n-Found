@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lost_n_Found.Models
 {
-    internal class UserModel
+    internal class Users
     {
         public static int Id_User { get; set; }
         public static string Name { get; set; }
@@ -18,5 +18,7 @@ namespace Lost_n_Found.Models
         public static int Gender { get; set; }
         public static string Phone { get; set; }
         public static string Role { get; set; }
+        public static string reset_token { get; set; }
+        public static DateTime token_expiry { get; set; }
     }
 }
