@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lost_n_Found.Models
+namespace Lost_n_Found.Models.Entity
 {
     internal class Users
     {

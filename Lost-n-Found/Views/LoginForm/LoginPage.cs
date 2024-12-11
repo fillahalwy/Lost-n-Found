@@ -55,5 +55,10 @@ namespace Lost_n_Found.Views.LoginForm
                 txtPassword.Text = null;
             }
         }
+
+        private void loginPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -25,6 +25,7 @@ namespace Lost_n_Found
         private ResetPass resetPass = new ResetPass();
         private HomePage homePage = new HomePage();
         private ProfilePage profilePage = new ProfilePage();
+        private DetailItem detailItem = new DetailItem();
 
         public Main()
         {
@@ -38,7 +39,7 @@ namespace Lost_n_Found
             }
             else
             {
-                loadView(register);
+                loadView(detailItem);
             }
         }
 

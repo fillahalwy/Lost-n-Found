@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 276);
+            this.ClientSize = new System.Drawing.Size(624, 337);
             this.Name = "SendToken";
             this.Text = "SendToken";
             this.ResumeLayout(false);

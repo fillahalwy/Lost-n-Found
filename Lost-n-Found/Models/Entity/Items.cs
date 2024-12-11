@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lost_n_Found.Models
+namespace Lost_n_Found.Models.Entity
 {
     internal class Items
     {
@@ -19,5 +19,5 @@ namespace Lost_n_Found.Models
         public string Item_note { get; set; }
         public string Item_type { get; set; }
         public string Item_status { get; set; }
-
+    }
 }
