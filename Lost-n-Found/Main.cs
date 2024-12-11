@@ -12,6 +12,7 @@ using Lost_n_Found.Views.LoginForm;
 using Lost_n_Found.Views.DashboardAdmin;
 using Lost_n_Found.Views.Home;
 using Lost_n_Found.Controllers.UserControllers;
+using Lost_n_Found.Views.User;
 
 namespace Lost_n_Found
 {
@@ -23,6 +24,7 @@ namespace Lost_n_Found
         private RegisterPage register = new RegisterPage();
         private ResetPass resetPass = new ResetPass();
         private HomePage homePage = new HomePage();
+        private ProfilePage profilePage = new ProfilePage();
 
         public Main()
         {
@@ -36,7 +38,7 @@ namespace Lost_n_Found
             }
             else
             {
-                loadView(login);
+                loadView(profilePage);
             }
         }
 
