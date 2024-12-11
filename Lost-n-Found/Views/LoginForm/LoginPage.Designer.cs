@@ -30,13 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.loginCard = new Bunifu.Framework.UI.BunifuCards();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.linkToken = new System.Windows.Forms.LinkLabel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtUsername = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.loginPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.linkToken = new System.Windows.Forms.LinkLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.loginCard.SuspendLayout();
             this.loginPanel.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +52,8 @@
             this.loginCard.BorderRadius = 50;
             this.loginCard.BottomSahddow = true;
             this.loginCard.color = System.Drawing.Color.Transparent;
+            this.loginCard.Controls.Add(this.linkLabel1);
+            this.loginCard.Controls.Add(this.bunifuCustomLabel3);
             this.loginCard.Controls.Add(this.bunifuCustomLabel2);
             this.loginCard.Controls.Add(this.linkToken);
             this.loginCard.Controls.Add(this.bunifuCustomLabel1);
@@ -64,42 +68,79 @@
             this.loginCard.Size = new System.Drawing.Size(512, 585);
             this.loginCard.TabIndex = 0;
             // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Arial Black", 30F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(182, 21);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(145, 56);
+            this.bunifuCustomLabel2.TabIndex = 7;
+            this.bunifuCustomLabel2.Text = "Login";
+            // 
+            // linkToken
+            // 
+            this.linkToken.AutoSize = true;
+            this.linkToken.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkToken.Location = new System.Drawing.Point(134, 338);
+            this.linkToken.Name = "linkToken";
+            this.linkToken.Size = new System.Drawing.Size(100, 15);
+            this.linkToken.TabIndex = 4;
+            this.linkToken.TabStop = true;
+            this.linkToken.Text = "Send Reset Token";
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(37, 338);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(100, 15);
+            this.bunifuCustomLabel1.TabIndex = 5;
+            this.bunifuCustomLabel1.Text = "Forgot Password?";
+            // 
             // txtPassword
             // 
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.HintForeColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.HintText = "Insert your Password";
+            this.txtPassword.HintForeColor = System.Drawing.Color.Black;
+            this.txtPassword.HintText = "Password";
             this.txtPassword.isPassword = true;
             this.txtPassword.LineFocusedColor = System.Drawing.Color.SeaGreen;
             this.txtPassword.LineIdleColor = System.Drawing.Color.Gray;
             this.txtPassword.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
-            this.txtPassword.LineThickness = 4;
-            this.txtPassword.Location = new System.Drawing.Point(40, 262);
+            this.txtPassword.LineThickness = 2;
+            this.txtPassword.Location = new System.Drawing.Point(40, 249);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(441, 48);
-            this.txtPassword.TabIndex = 4;
+            this.txtPassword.TabIndex = 2;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername.HintForeColor = System.Drawing.Color.DarkGray;
-            this.txtUsername.HintText = "Insert your Username";
+            this.txtUsername.HintForeColor = System.Drawing.Color.Black;
+            this.txtUsername.HintText = "Username";
             this.txtUsername.isPassword = false;
             this.txtUsername.LineFocusedColor = System.Drawing.Color.SeaGreen;
             this.txtUsername.LineIdleColor = System.Drawing.Color.Gray;
             this.txtUsername.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
-            this.txtUsername.LineThickness = 4;
-            this.txtUsername.Location = new System.Drawing.Point(40, 159);
+            this.txtUsername.LineThickness = 2;
+            this.txtUsername.Location = new System.Drawing.Point(40, 157);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(441, 48);
-            this.txtUsername.TabIndex = 3;
+            this.txtUsername.TabIndex = 1;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnLogin
@@ -123,11 +164,11 @@
             this.btnLogin.IdleFillColor = System.Drawing.Color.White;
             this.btnLogin.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnLogin.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnLogin.Location = new System.Drawing.Point(328, 471);
+            this.btnLogin.Location = new System.Drawing.Point(328, 446);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(153, 54);
-            this.btnLogin.TabIndex = 1;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -147,35 +188,26 @@
             this.loginPanel.Size = new System.Drawing.Size(1264, 681);
             this.loginPanel.TabIndex = 1;
             // 
-            // bunifuCustomLabel1
+            // linkLabel1
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(40, 345);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(92, 13);
-            this.bunifuCustomLabel1.TabIndex = 5;
-            this.bunifuCustomLabel1.Text = "Forgot Password?";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(170, 386);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(77, 15);
+            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Register Here";
             // 
-            // linkToken
+            // bunifuCustomLabel3
             // 
-            this.linkToken.AutoSize = true;
-            this.linkToken.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkToken.Location = new System.Drawing.Point(129, 345);
-            this.linkToken.Name = "linkToken";
-            this.linkToken.Size = new System.Drawing.Size(113, 13);
-            this.linkToken.TabIndex = 6;
-            this.linkToken.TabStop = true;
-            this.linkToken.Text = "Send Reset Token";
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Arial Black", 25F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(186, 29);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(123, 48);
-            this.bunifuCustomLabel2.TabIndex = 7;
-            this.bunifuCustomLabel2.Text = "Login";
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(37, 386);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(137, 15);
+            this.bunifuCustomLabel3.TabIndex = 9;
+            this.bunifuCustomLabel3.Text = "Don\'t have any account?";
             // 
             // LoginPage
             // 
@@ -202,5 +234,7 @@
         private System.Windows.Forms.LinkLabel linkToken;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
     }
 }

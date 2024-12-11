@@ -16,5 +16,22 @@ namespace Lost_n_Found.Views.LoginForm
         {
             InitializeComponent();
         }
+
+        private void RegisterPage_Load(object sender, EventArgs e)
+        {
+            CenterPanel(registerCard, registerPanel);
+        }
+
+        private void CenterPanel(Panel childPanel, Panel basePanel)
+        {
+            // Hitung posisi tengah
+            int centerX = (basePanel.Width - childPanel.Width) / 2;
+            int centerY = (basePanel.Height - childPanel.Height) / 2;
+
+            // Set posisi panel
+            childPanel.Left = centerX;
+            childPanel.Top = centerY;
+        }
+
     }
 }
