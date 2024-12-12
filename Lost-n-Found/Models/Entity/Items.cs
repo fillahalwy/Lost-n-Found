@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Google.Protobuf.WellKnownTypes;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,5 +21,7 @@ namespace Lost_n_Found.Models.Entity
         public string Item_note { get; set; }
         public string Item_type { get; set; }
         public string Item_status { get; set; }
+        public Timestamp Created_at { get; set; }
+        public Timestamp Updated_at { get; set; }
     }
 }
