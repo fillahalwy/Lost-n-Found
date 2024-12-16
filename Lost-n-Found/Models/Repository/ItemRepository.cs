@@ -42,7 +42,7 @@ namespace Lost_n_Found.Models.Repository
                         Item_name = reader["item_name"].ToString(),
                         Item_img = reader["item_img"].ToString(),
                         Item_description = reader["item_description"].ToString(),
-                        Item_date = reader["item_date"].ToString,
+                        Item_date = reader["item_date"].ToString(),
                         Item_location = reader["item_location"].ToString(),
                         Item_note = reader["item_note"].ToString(),
                         Item_type = reader["item_type"].ToString(),

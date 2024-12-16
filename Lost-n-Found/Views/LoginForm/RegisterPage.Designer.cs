@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterPage));
             this.registerPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.registerCard = new Bunifu.Framework.UI.BunifuCards();
+            this.txtEmail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.linkLogin = new System.Windows.Forms.LinkLabel();
             this.bunifuCustomLabel16 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnRegister = new Bunifu.Framework.UI.BunifuThinButton2();
             this.grpGender = new System.Windows.Forms.GroupBox();
-            this.txtWoman = new System.Windows.Forms.RadioButton();
-            this.txtMan = new System.Windows.Forms.RadioButton();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -57,7 +58,6 @@
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtEmail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.registerPanel.SuspendLayout();
             this.registerCard.SuspendLayout();
             this.grpGender.SuspendLayout();
@@ -118,6 +118,29 @@
             this.registerCard.Size = new System.Drawing.Size(659, 610);
             this.registerCard.TabIndex = 0;
             // 
+            // txtEmail
+            // 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmail.HintForeColor = System.Drawing.Color.Empty;
+            this.txtEmail.HintText = "";
+            this.txtEmail.isPassword = false;
+            this.txtEmail.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtEmail.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtEmail.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtEmail.LineThickness = 1;
+            this.txtEmail.Location = new System.Drawing.Point(180, 66);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(439, 37);
+            this.txtEmail.TabIndex = 26;
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // linkLogin
             // 
             this.linkLogin.AutoSize = true;
@@ -166,11 +189,12 @@
             this.btnRegister.Size = new System.Drawing.Size(135, 54);
             this.btnRegister.TabIndex = 23;
             this.btnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // grpGender
             // 
-            this.grpGender.Controls.Add(this.txtWoman);
-            this.grpGender.Controls.Add(this.txtMan);
+            this.grpGender.Controls.Add(this.rbFemale);
+            this.grpGender.Controls.Add(this.rbMale);
             this.grpGender.Location = new System.Drawing.Point(180, 311);
             this.grpGender.Name = "grpGender";
             this.grpGender.Size = new System.Drawing.Size(211, 48);
@@ -178,27 +202,27 @@
             this.grpGender.TabStop = false;
             this.grpGender.Text = "Please select your gender";
             // 
-            // txtWoman
+            // rbFemale
             // 
-            this.txtWoman.AutoSize = true;
-            this.txtWoman.Location = new System.Drawing.Point(117, 20);
-            this.txtWoman.Name = "txtWoman";
-            this.txtWoman.Size = new System.Drawing.Size(62, 17);
-            this.txtWoman.TabIndex = 1;
-            this.txtWoman.TabStop = true;
-            this.txtWoman.Text = "Woman";
-            this.txtWoman.UseVisualStyleBackColor = true;
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Location = new System.Drawing.Point(117, 20);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(59, 17);
+            this.rbFemale.TabIndex = 1;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = true;
             // 
-            // txtMan
+            // rbMale
             // 
-            this.txtMan.AutoSize = true;
-            this.txtMan.Location = new System.Drawing.Point(16, 19);
-            this.txtMan.Name = "txtMan";
-            this.txtMan.Size = new System.Drawing.Size(46, 17);
-            this.txtMan.TabIndex = 0;
-            this.txtMan.TabStop = true;
-            this.txtMan.Text = "Man";
-            this.txtMan.UseVisualStyleBackColor = true;
+            this.rbMale.AutoSize = true;
+            this.rbMale.Location = new System.Drawing.Point(16, 19);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(48, 17);
+            this.rbMale.TabIndex = 0;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
             // 
             // bunifuCustomLabel15
             // 
@@ -465,29 +489,6 @@
             this.bunifuCustomLabel4.TabIndex = 5;
             this.bunifuCustomLabel4.Text = "Username";
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtEmail.HintForeColor = System.Drawing.Color.Empty;
-            this.txtEmail.HintText = "";
-            this.txtEmail.isPassword = false;
-            this.txtEmail.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtEmail.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtEmail.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtEmail.LineThickness = 1;
-            this.txtEmail.Location = new System.Drawing.Point(180, 66);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(439, 37);
-            this.txtEmail.TabIndex = 26;
-            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // RegisterPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -512,8 +513,8 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnRegister;
         private System.Windows.Forms.GroupBox grpGender;
-        private System.Windows.Forms.RadioButton txtWoman;
-        private System.Windows.Forms.RadioButton txtMan;
+        private System.Windows.Forms.RadioButton rbFemale;
+        private System.Windows.Forms.RadioButton rbMale;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel15;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel14;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel13;

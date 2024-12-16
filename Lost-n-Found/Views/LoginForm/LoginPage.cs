@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Lost_n_Found.Controllers;
 using Lost_n_Found.Controllers.UserControllers;
+using Lost_n_Found.Models.UserLogin;
 
 namespace Lost_n_Found.Views.LoginForm
 {
     public partial class LoginPage : UserControl
     {
-        private LoginController login = new LoginController();
+        private UserLogin login = new UserLogin();
 
 
         public event Action ShowForgotPass;

@@ -10,9 +10,9 @@ using System.Windows.Navigation;
 using System.Xml.Linq;
 using MessageBox = System.Windows.Forms.MessageBox;
 
-namespace Lost_n_Found.Controllers.UserControllers
+namespace Lost_n_Found.Models.UserLogin
 {
-    internal class RegisterController
+    internal class UserRegister
     {
         DatabaseConnection conn = new DatabaseConnection();
         public bool Register(string email, string name, string username, string password, int gender, string address, string phone) 

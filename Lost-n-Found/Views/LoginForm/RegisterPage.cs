@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lost_n_Found.Models.UserLogin;
+using Lost_n_Found.Models.Entity;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Lost_n_Found.Views.LoginForm
 {
     public partial class RegisterPage : UserControl
     {
+        Users user = new Users();
+
         public RegisterPage()
         {
             InitializeComponent();
@@ -33,5 +38,23 @@ namespace Lost_n_Found.Views.LoginForm
             childPanel.Top = centerY;
         }
 
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
+            //user.Email = txtEmail.Text;
+        }
+
+        private int GetGender()
+        {
+            if (rbMale.Checked)
+            {
+                return 1;
+            }
+            else if (rbFemale.Checked)
+            {
+                return 2;
+            }
+            return 0;
+        }
     }
 }

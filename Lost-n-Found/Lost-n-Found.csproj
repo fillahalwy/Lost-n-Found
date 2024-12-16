@@ -109,11 +109,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CurrentUser.cs" />
-    <Compile Include="Controllers\UserControllers\GenerateToken.cs" />
-    <Compile Include="Controllers\UserControllers\ResetPassController.cs" />
-    <Compile Include="Controllers\UserControllers\LoginController.cs" />
-    <Compile Include="Controllers\UserControllers\RegisterController.cs" />
-    <Compile Include="Controllers\UserControllers\SendToken.cs" />
+    <Compile Include="Controllers\LoginControllers\RegisterController.cs" />
+    <Compile Include="Controllers\LoginControllers\ResetPassController.cs" />
+    <Compile Include="Models\UserLogin\UserLogin.cs" />
+    <Compile Include="Models\UserLogin\UserRegister.cs" />
+    <Compile Include="Controllers\LoginControllers\SendToken.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +245,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\ItemControllers\" />
+    <Folder Include="Controllers\UserControllers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

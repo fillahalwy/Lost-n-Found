@@ -9,10 +9,11 @@ using System.Windows.Forms;
 using Lost_n_Found.Models.Database;
 using MySql.Data.MySqlClient;
 using MessageBox = System.Windows.Forms.MessageBox;
+using Lost_n_Found.Controllers;
 
-namespace Lost_n_Found.Controllers
+namespace Lost_n_Found.Models.UserLogin
 {
-    internal class LoginController
+    internal class UserLogin
     {
         private DatabaseConnection conn = new DatabaseConnection(); // deklarasi objek database
 

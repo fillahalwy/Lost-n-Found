@@ -13,12 +13,13 @@ using Lost_n_Found.Views.DashboardAdmin;
 using Lost_n_Found.Views.Home;
 using Lost_n_Found.Controllers.UserControllers;
 using Lost_n_Found.Views.User;
+using Lost_n_Found.Models.UserLogin;
 
 namespace Lost_n_Found
 {
     public partial class Main : Form
     {
-        private LoginController loginController = new LoginController();
+        private UserLogin loginController = new UserLogin();
 
         private LoginPage login = new LoginPage();
         private RegisterPage register = new RegisterPage();
@@ -39,7 +40,7 @@ namespace Lost_n_Found
             }
             else
             {
-                loadView(detailItem);
+                loadView(login);
             }
         }
 
