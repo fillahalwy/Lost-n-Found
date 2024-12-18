@@ -21,7 +21,7 @@ namespace Lost_n_Found.Models.Entity
         public string Item_note { get; set; }
         public string Item_type { get; set; }
         public string Item_status { get; set; }
-        public Timestamp Created_at { get; set; }
-        public Timestamp Updated_at { get; set; }
+        public string Created_at { get; set; }
+        public string Updated_at { get; set; }
     }
 }

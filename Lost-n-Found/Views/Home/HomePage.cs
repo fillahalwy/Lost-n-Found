@@ -39,6 +39,16 @@ namespace Lost_n_Found.Views.Home
             ShowProfile?.Invoke();
         }
 
+        //FlowLayoutPanel panelHomeContainer = new FlowLayoutPanel
+        //{
+        //    Dock = DockStyle.Fill,
+        //    AutoScroll = true,
+        //    FlowDirection = FlowDirection.LeftToRight,
+        //    WrapContents = true
+        //};
+
+
+
         
         private void LoadItems()
         {
@@ -109,8 +119,13 @@ namespace Lost_n_Found.Views.Home
                 card.Controls.Add(detailLink);
 
                 panelHomeContainer.Controls.Add(card);
+                panelHomeContainer.AutoScroll = true;
+                panelHomeContainer.WrapContents = true; // Menjadikan layout membungkus ke baris baru jika melebihi lebar panel
+                panelHomeContainer.FlowDirection = FlowDirection.LeftToRight;
+
             }
         }
+
         private void ViewDetails(int id)
         {
             MessageBox.Show($"Show details for item with ID: {id}");

@@ -36,7 +36,7 @@ namespace Lost_n_Found.Models.Repository
                 {
                     items.Add(new Items
                     {
-                        Id_item = (int)reader["id_items"],
+                        Id_item = (int)reader["id_item"],
                         Id_user = (int)reader["id_user"],
                         Id_category = (int)reader["id_category"],
                         Item_name = reader["item_name"].ToString(),
@@ -47,11 +47,9 @@ namespace Lost_n_Found.Models.Repository
                         Item_note = reader["item_note"].ToString(),
                         Item_type = reader["item_type"].ToString(),
                         Item_status = reader["item_status"].ToString(),
-                        Created_at = (Timestamp)reader["created_at"],
-                        Updated_at = (Timestamp)reader["updated_at"]
+                        Created_at = reader["created_at"].ToString(),
+                        Updated_at = reader["updated_at"].ToString()
                     });
-
-
                 }
                 return items;
             } 
