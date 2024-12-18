@@ -8,18 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lost_n_Found.Views.Home;
 using Lost_n_Found.Views.LoginForm;
 using Lost_n_Found.Views.DashboardAdmin;
-using Lost_n_Found.Views.Home;
-using Lost_n_Found.Controllers.UserControllers;
-using Lost_n_Found.Views.User;
-using Lost_n_Found.Models.UserLogin;
 
 namespace Lost_n_Found
 {
     public partial class Main : Form
     {
-        private UserLogin loginController = new UserLogin();
+        private UserController userController = new UserController();
 
         private LoginPage login = new LoginPage();
         private RegisterPage register = new RegisterPage();
@@ -27,14 +24,24 @@ namespace Lost_n_Found
         private HomePage homePage = new HomePage();
         private ProfilePage profilePage = new ProfilePage();
         private DetailItem detailItem = new DetailItem();
+        private SendToken sendToken = new SendToken();
 
         public Main()
         {
             InitializeComponent();
 
             login.ShowHomepage += () => loadView(homePage);
+            login.ShowRegister += () => loadView(register);
+            login.ShowResetPass += () => loadView(resetPass);
 
-            if (loginController.IsLogin())
+            register.ShowLogin += () => loadView(login);
+
+            resetPass.ShowLogin += () => loadView(login);
+            sendToken.ShowResetPass += () => loadView(resetPass);
+
+            homePage.ShowLogin += () => loadView(login);
+
+            if (userController.IsLogin())
             {
                 loadView(homePage);
             }
@@ -42,6 +49,17 @@ namespace Lost_n_Found
             {
                 loadView(login);
             }
+
+        }
+
+        private void Login_ShowResetPass()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void loadView()
+        {
+            throw new NotImplementedException();
         }
 
         // Fungsi untuk menampilkan view

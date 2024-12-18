@@ -8,17 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Lost_n_Found.Controllers;
-using Lost_n_Found.Controllers.UserControllers;
-using Lost_n_Found.Models.UserLogin;
+using Lost_n_Found.Models.Entity;
+using Lost_n_Found.Models.Repository;
 
 namespace Lost_n_Found.Views.LoginForm
 {
     public partial class LoginPage : UserControl
     {
-        private UserLogin login = new UserLogin();
+        private Users user = new Users();
+        private UserController userController = new UserController();
 
-
-        public event Action ShowForgotPass;
+        public event Action ShowResetPass;
         public event Action ShowRegister;
         public event Action ShowHomepage;
 
@@ -46,20 +46,28 @@ namespace Lost_n_Found.Views.LoginForm
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
-
-            if(login.LoginProcess(username, password))
+            user.Username = txtUsername.Text;
+            user.Password = txtPassword.Text;
+            
+            if(userController.Login(user))
             {
+                txtUsername.Text = string.Empty; 
+                txtPassword.Text = string.Empty;
                 ShowHomepage?.Invoke();
-                txtUsername.Text = null;
-                txtPassword.Text = null;
             }
+            
         }
 
-        private void loginPanel_Paint(object sender, PaintEventArgs e)
+        private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            ShowRegister?.Invoke();
+        }
 
+        private void linkToken_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SendToken formEmail = new SendToken();
+            formEmail.ShowDialog();
+            ShowResetPass?.Invoke();
         }
     }
 }

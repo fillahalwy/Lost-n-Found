@@ -31,7 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterPage));
             this.registerPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.registerCard = new Bunifu.Framework.UI.BunifuCards();
-            this.txtEmail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtPhone = new Guna.UI.WinForms.GunaTextBox();
+            this.txtAddress = new Guna.UI.WinForms.GunaTextBox();
+            this.txtPassword = new Guna.UI.WinForms.GunaTextBox();
+            this.txtUsername = new Guna.UI.WinForms.GunaTextBox();
+            this.txtName = new Guna.UI.WinForms.GunaTextBox();
+            this.txtEmail = new Guna.UI.WinForms.GunaTextBox();
+            this.btnReset = new Bunifu.Framework.UI.BunifuThinButton2();
             this.linkLogin = new System.Windows.Forms.LinkLabel();
             this.bunifuCustomLabel16 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnRegister = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -45,11 +51,6 @@
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtPhone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtAddress = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtUsername = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -85,7 +86,13 @@
             this.registerCard.BorderRadius = 20;
             this.registerCard.BottomSahddow = true;
             this.registerCard.color = System.Drawing.Color.White;
+            this.registerCard.Controls.Add(this.txtPhone);
+            this.registerCard.Controls.Add(this.txtAddress);
+            this.registerCard.Controls.Add(this.txtPassword);
+            this.registerCard.Controls.Add(this.txtUsername);
+            this.registerCard.Controls.Add(this.txtName);
             this.registerCard.Controls.Add(this.txtEmail);
+            this.registerCard.Controls.Add(this.btnReset);
             this.registerCard.Controls.Add(this.linkLogin);
             this.registerCard.Controls.Add(this.bunifuCustomLabel16);
             this.registerCard.Controls.Add(this.btnRegister);
@@ -97,11 +104,6 @@
             this.registerCard.Controls.Add(this.bunifuCustomLabel11);
             this.registerCard.Controls.Add(this.bunifuCustomLabel10);
             this.registerCard.Controls.Add(this.bunifuCustomLabel9);
-            this.registerCard.Controls.Add(this.txtPhone);
-            this.registerCard.Controls.Add(this.txtAddress);
-            this.registerCard.Controls.Add(this.txtPassword);
-            this.registerCard.Controls.Add(this.txtUsername);
-            this.registerCard.Controls.Add(this.txtName);
             this.registerCard.Controls.Add(this.bunifuCustomLabel8);
             this.registerCard.Controls.Add(this.bunifuCustomLabel1);
             this.registerCard.Controls.Add(this.bunifuCustomLabel7);
@@ -118,47 +120,157 @@
             this.registerCard.Size = new System.Drawing.Size(659, 610);
             this.registerCard.TabIndex = 0;
             // 
+            // txtPhone
+            // 
+            this.txtPhone.BaseColor = System.Drawing.Color.White;
+            this.txtPhone.BorderColor = System.Drawing.Color.Black;
+            this.txtPhone.BorderSize = 1;
+            this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhone.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtPhone.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtPhone.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPhone.Location = new System.Drawing.Point(179, 475);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.PasswordChar = '\0';
+            this.txtPhone.Radius = 5;
+            this.txtPhone.Size = new System.Drawing.Size(440, 28);
+            this.txtPhone.TabIndex = 33;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.BaseColor = System.Drawing.Color.White;
+            this.txtAddress.BorderColor = System.Drawing.Color.Black;
+            this.txtAddress.BorderSize = 1;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtAddress.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtAddress.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAddress.Location = new System.Drawing.Point(180, 383);
+            this.txtAddress.MultiLine = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.PasswordChar = '\0';
+            this.txtAddress.Radius = 5;
+            this.txtAddress.Size = new System.Drawing.Size(439, 65);
+            this.txtAddress.TabIndex = 32;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BaseColor = System.Drawing.Color.White;
+            this.txtPassword.BorderColor = System.Drawing.Color.Black;
+            this.txtPassword.BorderSize = 1;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtPassword.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPassword.Location = new System.Drawing.Point(179, 266);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Radius = 5;
+            this.txtPassword.Size = new System.Drawing.Size(440, 28);
+            this.txtPassword.TabIndex = 31;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BaseColor = System.Drawing.Color.White;
+            this.txtUsername.BorderColor = System.Drawing.Color.Black;
+            this.txtUsername.BorderSize = 1;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtUsername.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtUsername.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsername.Location = new System.Drawing.Point(179, 202);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.Radius = 5;
+            this.txtUsername.Size = new System.Drawing.Size(440, 28);
+            this.txtUsername.TabIndex = 30;
+            // 
+            // txtName
+            // 
+            this.txtName.BaseColor = System.Drawing.Color.White;
+            this.txtName.BorderColor = System.Drawing.Color.Black;
+            this.txtName.BorderSize = 1;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtName.Location = new System.Drawing.Point(179, 140);
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.Radius = 5;
+            this.txtName.Size = new System.Drawing.Size(440, 28);
+            this.txtName.TabIndex = 29;
+            // 
             // txtEmail
             // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtEmail.BaseColor = System.Drawing.Color.White;
+            this.txtEmail.BorderColor = System.Drawing.Color.Black;
+            this.txtEmail.BorderSize = 1;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtEmail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtEmail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.Location = new System.Drawing.Point(179, 75);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PasswordChar = '\0';
+            this.txtEmail.Radius = 5;
+            this.txtEmail.Size = new System.Drawing.Size(440, 28);
+            this.txtEmail.TabIndex = 28;
+            // 
+            // btnReset
+            // 
+            this.btnReset.ActiveBorderThickness = 1;
+            this.btnReset.ActiveCornerRadius = 20;
+            this.btnReset.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnReset.ActiveForecolor = System.Drawing.Color.White;
+            this.btnReset.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtEmail.HintForeColor = System.Drawing.Color.Empty;
-            this.txtEmail.HintText = "";
-            this.txtEmail.isPassword = false;
-            this.txtEmail.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtEmail.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtEmail.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtEmail.LineThickness = 1;
-            this.txtEmail.Location = new System.Drawing.Point(180, 66);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(439, 37);
-            this.txtEmail.TabIndex = 26;
-            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReset.BackColor = System.Drawing.Color.White;
+            this.btnReset.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReset.BackgroundImage")));
+            this.btnReset.ButtonText = "Reset";
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.Font = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Bold);
+            this.btnReset.ForeColor = System.Drawing.Color.Black;
+            this.btnReset.IdleBorderThickness = 1;
+            this.btnReset.IdleCornerRadius = 20;
+            this.btnReset.IdleFillColor = System.Drawing.Color.White;
+            this.btnReset.IdleForecolor = System.Drawing.Color.Red;
+            this.btnReset.IdleLineColor = System.Drawing.Color.Red;
+            this.btnReset.Location = new System.Drawing.Point(415, 532);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(87, 48);
+            this.btnReset.TabIndex = 27;
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // linkLogin
             // 
             this.linkLogin.AutoSize = true;
-            this.linkLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLogin.Location = new System.Drawing.Point(309, 532);
+            this.linkLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.linkLogin.Location = new System.Drawing.Point(277, 532);
             this.linkLogin.Name = "linkLogin";
-            this.linkLogin.Size = new System.Drawing.Size(37, 15);
+            this.linkLogin.Size = new System.Drawing.Size(44, 19);
             this.linkLogin.TabIndex = 24;
             this.linkLogin.TabStop = true;
             this.linkLogin.Text = "Login";
+            this.linkLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLogin_LinkClicked);
             // 
             // bunifuCustomLabel16
             // 
             this.bunifuCustomLabel16.AutoSize = true;
-            this.bunifuCustomLabel16.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel16.Location = new System.Drawing.Point(177, 532);
+            this.bunifuCustomLabel16.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel16.Location = new System.Drawing.Point(132, 532);
             this.bunifuCustomLabel16.Name = "bunifuCustomLabel16";
-            this.bunifuCustomLabel16.Size = new System.Drawing.Size(126, 15);
+            this.bunifuCustomLabel16.Size = new System.Drawing.Size(149, 19);
             this.bunifuCustomLabel16.TabIndex = 25;
             this.bunifuCustomLabel16.Text = "Already have account?";
             // 
@@ -176,17 +288,17 @@
             this.btnRegister.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegister.BackgroundImage")));
             this.btnRegister.ButtonText = "Register";
             this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegister.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Font = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Bold);
             this.btnRegister.ForeColor = System.Drawing.Color.Black;
             this.btnRegister.IdleBorderThickness = 1;
             this.btnRegister.IdleCornerRadius = 20;
             this.btnRegister.IdleFillColor = System.Drawing.Color.White;
             this.btnRegister.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnRegister.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnRegister.Location = new System.Drawing.Point(484, 532);
+            this.btnRegister.Location = new System.Drawing.Point(511, 532);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(5);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(135, 54);
+            this.btnRegister.Size = new System.Drawing.Size(108, 48);
             this.btnRegister.TabIndex = 23;
             this.btnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
@@ -294,121 +406,6 @@
             this.bunifuCustomLabel9.TabIndex = 15;
             this.bunifuCustomLabel9.Text = ":";
             // 
-            // txtPhone
-            // 
-            this.txtPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.txtPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPhone.HintForeColor = System.Drawing.Color.Empty;
-            this.txtPhone.HintText = "";
-            this.txtPhone.isPassword = false;
-            this.txtPhone.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtPhone.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtPhone.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtPhone.LineThickness = 1;
-            this.txtPhone.Location = new System.Drawing.Point(180, 475);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(439, 37);
-            this.txtPhone.TabIndex = 14;
-            this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtAddress.HintForeColor = System.Drawing.Color.Empty;
-            this.txtAddress.HintText = "";
-            this.txtAddress.isPassword = false;
-            this.txtAddress.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtAddress.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtAddress.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtAddress.LineThickness = 1;
-            this.txtAddress.Location = new System.Drawing.Point(180, 384);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(439, 61);
-            this.txtAddress.TabIndex = 13;
-            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPassword.HintForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.HintText = "";
-            this.txtPassword.isPassword = true;
-            this.txtPassword.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtPassword.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtPassword.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtPassword.LineThickness = 1;
-            this.txtPassword.Location = new System.Drawing.Point(180, 257);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(439, 37);
-            this.txtPassword.TabIndex = 12;
-            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtUsername.HintForeColor = System.Drawing.Color.Empty;
-            this.txtUsername.HintText = "";
-            this.txtUsername.isPassword = false;
-            this.txtUsername.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtUsername.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtUsername.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtUsername.LineThickness = 1;
-            this.txtUsername.Location = new System.Drawing.Point(180, 193);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(439, 37);
-            this.txtUsername.TabIndex = 11;
-            this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtName
-            // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtName.HintForeColor = System.Drawing.Color.Empty;
-            this.txtName.HintText = "";
-            this.txtName.isPassword = false;
-            this.txtName.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtName.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtName.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtName.LineThickness = 1;
-            this.txtName.Location = new System.Drawing.Point(180, 131);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(439, 37);
-            this.txtName.TabIndex = 10;
-            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // bunifuCustomLabel8
             // 
             this.bunifuCustomLabel8.AutoSize = true;
@@ -422,10 +419,10 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(251, 0);
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Black", 22F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(274, 11);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(126, 37);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(140, 41);
             this.bunifuCustomLabel1.TabIndex = 1;
             this.bunifuCustomLabel1.Text = "Register";
             // 
@@ -522,11 +519,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPhone;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtAddress;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPassword;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtUsername;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtName;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
@@ -536,6 +528,12 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private System.Windows.Forms.LinkLabel linkLogin;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel16;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtEmail;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnReset;
+        private Guna.UI.WinForms.GunaTextBox txtEmail;
+        private Guna.UI.WinForms.GunaTextBox txtPassword;
+        private Guna.UI.WinForms.GunaTextBox txtUsername;
+        private Guna.UI.WinForms.GunaTextBox txtName;
+        private Guna.UI.WinForms.GunaTextBox txtPhone;
+        private Guna.UI.WinForms.GunaTextBox txtAddress;
     }
 }

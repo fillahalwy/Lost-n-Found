@@ -36,13 +36,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnProfile = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelHomeContainer = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnLogout = new Guna.UI.WinForms.GunaButton();
             this.homePanel.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // homePanel
@@ -121,7 +122,8 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton1);
+            this.bunifuGradientPanel1.Controls.Add(this.btnLogout);
+            this.bunifuGradientPanel1.Controls.Add(this.btnProfile);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.RoyalBlue;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.RoyalBlue;
@@ -133,18 +135,19 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1264, 110);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
-            // bunifuImageButton1
+            // btnProfile
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.White;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1146, 20);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(71, 71);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 0;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            this.btnProfile.BackColor = System.Drawing.Color.White;
+            this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
+            this.btnProfile.ImageActive = null;
+            this.btnProfile.Location = new System.Drawing.Point(1040, 21);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(71, 71);
+            this.btnProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnProfile.TabIndex = 0;
+            this.btnProfile.TabStop = false;
+            this.btnProfile.Zoom = 10;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // panelHomeContainer
             // 
@@ -162,6 +165,32 @@
             this.panelHomeContainer.Size = new System.Drawing.Size(1264, 681);
             this.panelHomeContainer.TabIndex = 2;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.AnimationHoverSpeed = 0.07F;
+            this.btnLogout.AnimationSpeed = 0.03F;
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogout.BaseColor = System.Drawing.Color.Red;
+            this.btnLogout.BorderColor = System.Drawing.Color.Black;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = null;
+            this.btnLogout.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnLogout.Location = new System.Drawing.Point(1131, 38);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnLogout.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnLogout.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnLogout.OnHoverImage = null;
+            this.btnLogout.OnPressedColor = System.Drawing.Color.Black;
+            this.btnLogout.Radius = 20;
+            this.btnLogout.Size = new System.Drawing.Size(79, 41);
+            this.btnLogout.TabIndex = 0;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnLogout.UseTransfarantBackground = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,7 +203,7 @@
             this.bunifuCards1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProfile)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,12 +212,13 @@
 
         private Bunifu.Framework.UI.BunifuGradientPanel homePanel;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton btnProfile;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuGradientPanel panelHomeContainer;
+        private Guna.UI.WinForms.GunaButton btnLogout;
     }
 }

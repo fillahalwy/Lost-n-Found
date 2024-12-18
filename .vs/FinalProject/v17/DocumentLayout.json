@@ -3,76 +3,56 @@
   "WorkspaceRootPath": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\views\\loginform\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\loginform\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\views\\home\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\home\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\views\\loginform\\profilepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\loginform\\profilepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\views\\loginform\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\loginform\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\controllers\\logincontrollers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\controllers\\logincontrollers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\models\\entity\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\models\\entity\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\models\\userlogin\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\models\\userlogin\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\views\\loginform\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\loginform\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\views\\loginform\\profilepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\loginform\\profilepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\controllers\\logincontrollers\\sendtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\controllers\\logincontrollers\\sendtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\controllers\\currentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\controllers\\currentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\views\\loginform\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\loginform\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\views\\loginform\\resetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\loginform\\resetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\controllers\\logincontrollers\\resetpasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\controllers\\logincontrollers\\resetpasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\models\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\models\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\models\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\models\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\views\\home\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\home\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\models\\entity\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\models\\entity\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\views\\home\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\home\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\models\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\models\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|e:\\amikom\\sem 3\\pemrograman lanjut\\uts \u0026 uas\\finalproject\\lost-n-found\\views\\loginform\\profilepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\loginform\\profilepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\models\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\models\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\views\\loginform\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\views\\loginform\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\lost-n-found\\models\\entity\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D278EDD-4244-438A-9AA9-20E941F17071}|Lost-n-Found\\Lost-n-Found.csproj|solutionrelative:lost-n-found\\models\\entity\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\LoginControllers\\ResetPassController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lost-n-Found\\Controllers\\LoginControllers\\ResetPassController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,17 +62,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Main.cs",
               "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Main.cs",
               "RelativeDocumentMoniker": "Lost-n-Found\\Main.cs",
               "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Main.cs",
               "RelativeToolTip": "Lost-n-Found\\Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T14:50:44.03Z",
               "IsPinned": true,
@@ -100,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Main.cs",
               "RelativeDocumentMoniker": "Lost-n-Found\\Main.cs",
@@ -112,8 +92,126 @@
               "EditorCaption": " [Design]"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProfilePage.cs [Design]",
+              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs",
+              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs",
+              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs [Design]",
+              "RelativeToolTip": "Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T03:44:21.169Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomePage.cs [Design]",
+              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\Home\\HomePage.cs",
+              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\Home\\HomePage.cs",
+              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\Home\\HomePage.cs [Design]",
+              "RelativeToolTip": "Lost-n-Found\\Views\\Home\\HomePage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T19:11:44.925Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomePage.cs",
+              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\Home\\HomePage.cs",
+              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\Home\\HomePage.cs",
+              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\Home\\HomePage.cs",
+              "RelativeToolTip": "Lost-n-Found\\Views\\Home\\HomePage.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwCoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T03:02:59.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfilePage.cs",
+              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs",
+              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs",
+              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs",
+              "RelativeToolTip": "Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T19:51:22.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "Lost-n-Found\\Controllers\\ItemController.cs",
+              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "Lost-n-Found\\Controllers\\ItemController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T03:52:02.442Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Items.cs",
+              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Entity\\Items.cs",
+              "RelativeDocumentMoniker": "Lost-n-Found\\Models\\Entity\\Items.cs",
+              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Entity\\Items.cs",
+              "RelativeToolTip": "Lost-n-Found\\Models\\Entity\\Items.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T08:36:10.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemRepository.cs",
+              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Repository\\ItemRepository.cs",
+              "RelativeDocumentMoniker": "Lost-n-Found\\Models\\Repository\\ItemRepository.cs",
+              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Repository\\ItemRepository.cs",
+              "RelativeToolTip": "Lost-n-Found\\Models\\Repository\\ItemRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwCYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T08:36:15.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Lost-n-Found\\Models\\Repository\\UserRepository.cs",
+              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Lost-n-Found\\Models\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAqwBABAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T17:50:53.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterPage.cs [Design]",
+              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs",
+              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs",
+              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs [Design]",
+              "RelativeToolTip": "Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:24:10.79Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Users.cs",
               "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Entity\\Users.cs",
               "RelativeDocumentMoniker": "Lost-n-Found\\Models\\Entity\\Users.cs",
@@ -126,196 +224,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterPage.cs",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs",
-              "RelativeToolTip": "Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAIA1wCwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:33:05.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterController.cs",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\LoginControllers\\RegisterController.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Controllers\\LoginControllers\\RegisterController.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\LoginControllers\\RegisterController.cs",
-              "RelativeToolTip": "Lost-n-Found\\Controllers\\LoginControllers\\RegisterController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:29:37.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserRegister.cs",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\UserLogin\\UserRegister.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Models\\UserLogin\\UserRegister.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\UserLogin\\UserRegister.cs",
-              "RelativeToolTip": "Lost-n-Found\\Models\\UserLogin\\UserRegister.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T17:58:44.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProfilePage.cs [Design]",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs [Design]",
-              "RelativeToolTip": "Lost-n-Found\\Views\\LoginForm\\ProfilePage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:24:12.956Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterPage.cs [Design]",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs [Design]",
-              "RelativeToolTip": "Lost-n-Found\\Views\\LoginForm\\RegisterPage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:24:10.79Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginPage.cs",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\LoginPage.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\LoginForm\\LoginPage.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\LoginPage.cs",
-              "RelativeToolTip": "Lost-n-Found\\Views\\LoginForm\\LoginPage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T20:43:55.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SendToken.cs",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\LoginControllers\\SendToken.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Controllers\\LoginControllers\\SendToken.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\LoginControllers\\SendToken.cs",
-              "RelativeToolTip": "Lost-n-Found\\Controllers\\LoginControllers\\SendToken.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAuwFIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T17:59:02.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CurrentUser.cs",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\CurrentUser.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Controllers\\CurrentUser.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\CurrentUser.cs",
-              "RelativeToolTip": "Lost-n-Found\\Controllers\\CurrentUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:25:24.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "ResetPass.cs [Design]",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\ResetPass.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\LoginForm\\ResetPass.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\ResetPass.cs [Design]",
-              "RelativeToolTip": "Lost-n-Found\\Views\\LoginForm\\ResetPass.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:24:08.018Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "ResetPassController.cs",
               "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\LoginControllers\\ResetPassController.cs",
               "RelativeDocumentMoniker": "Lost-n-Found\\Controllers\\LoginControllers\\ResetPassController.cs",
               "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Controllers\\LoginControllers\\ResetPassController.cs",
               "RelativeToolTip": "Lost-n-Found\\Controllers\\LoginControllers\\ResetPassController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T17:59:00.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginPage.cs [Design]",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\LoginPage.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\LoginForm\\LoginPage.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\LoginForm\\LoginPage.cs [Design]",
-              "RelativeToolTip": "Lost-n-Found\\Views\\LoginForm\\LoginPage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T08:13:48.683Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ItemRepository.cs",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Repository\\ItemRepository.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Models\\Repository\\ItemRepository.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Repository\\ItemRepository.cs",
-              "RelativeToolTip": "Lost-n-Found\\Models\\Repository\\ItemRepository.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAcwC0AAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T08:36:15.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Items.cs",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Entity\\Items.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Models\\Entity\\Items.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Entity\\Items.cs",
-              "RelativeToolTip": "Lost-n-Found\\Models\\Entity\\Items.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T08:36:10.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Models\\Repository\\UserRepository.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Models\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "Lost-n-Found\\Models\\Repository\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T17:50:53.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "HomePage.cs [Design]",
-              "DocumentMoniker": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\Home\\HomePage.cs",
-              "RelativeDocumentMoniker": "Lost-n-Found\\Views\\Home\\HomePage.cs",
-              "ToolTip": "E:\\AMIKOM\\Sem 3\\Pemrograman Lanjut\\UTS \u0026 UAS\\FinalProject\\Lost-n-Found\\Views\\Home\\HomePage.cs [Design]",
-              "RelativeToolTip": "Lost-n-Found\\Views\\Home\\HomePage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T19:11:44.925Z"
+              "WhenOpened": "2024-12-16T17:59:00.682Z"
             }
           ]
         }

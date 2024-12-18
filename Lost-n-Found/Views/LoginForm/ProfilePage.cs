@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lost_n_Found.Views.User
+namespace Lost_n_Found.Views.LoginForm
 {
     public partial class ProfilePage : UserControl
     {
@@ -16,5 +16,6 @@ namespace Lost_n_Found.Views.User
         {
             InitializeComponent();
         }
+
     }
 }

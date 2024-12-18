@@ -1,4 +1,4 @@
-﻿namespace Lost_n_Found.Views.User
+﻿namespace Lost_n_Found.Views.LoginForm
 {
     partial class ProfilePage
     {
@@ -35,25 +35,29 @@
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblEmail = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblPhone = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnEditProfile = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblName = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblUsername = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblGender = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnBack = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtAlamat = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.profileCard.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -109,14 +113,14 @@
             this.bunifuCards1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.White;
+            this.bunifuCards1.Controls.Add(this.groupBox4);
             this.bunifuCards1.Controls.Add(this.groupBox1);
             this.bunifuCards1.Controls.Add(this.groupBox3);
-            this.bunifuCards1.Controls.Add(this.btnEditProfile);
             this.bunifuCards1.Controls.Add(this.pictureBox1);
-            this.bunifuCards1.Controls.Add(this.bunifuCustomLabel1);
-            this.bunifuCards1.Controls.Add(this.bunifuCustomLabel3);
+            this.bunifuCards1.Controls.Add(this.lblName);
+            this.bunifuCards1.Controls.Add(this.lblUsername);
             this.bunifuCards1.Controls.Add(this.bunifuFlatButton1);
-            this.bunifuCards1.Controls.Add(this.bunifuCustomLabel7);
+            this.bunifuCards1.Controls.Add(this.lblGender);
             this.bunifuCards1.LeftSahddow = false;
             this.bunifuCards1.Location = new System.Drawing.Point(31, 61);
             this.bunifuCards1.Name = "bunifuCards1";
@@ -127,45 +131,46 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtAlamat);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(233, 168);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(398, 95);
+            this.groupBox1.Size = new System.Drawing.Size(650, 95);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Address";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.bunifuCustomLabel2);
-            this.groupBox3.Controls.Add(this.bunifuCustomLabel6);
+            this.groupBox3.Controls.Add(this.lblEmail);
+            this.groupBox3.Controls.Add(this.lblPhone);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(233, 86);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(398, 76);
+            this.groupBox3.Size = new System.Drawing.Size(650, 76);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Contact";
             // 
-            // bunifuCustomLabel2
+            // lblEmail
             // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(6, 21);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(173, 21);
-            this.bunifuCustomLabel2.TabIndex = 3;
-            this.bunifuCustomLabel2.Text = "youremail@gmail.com";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(6, 21);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(173, 21);
+            this.lblEmail.TabIndex = 3;
+            this.lblEmail.Text = "youremail@gmail.com";
             // 
-            // bunifuCustomLabel6
+            // lblPhone
             // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(6, 46);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(118, 21);
-            this.bunifuCustomLabel6.TabIndex = 8;
-            this.bunifuCustomLabel6.Text = "089086872534";
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.Location = new System.Drawing.Point(6, 46);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(118, 21);
+            this.lblPhone.TabIndex = 8;
+            this.lblPhone.Text = "089086872534";
             // 
             // btnEditProfile
             // 
@@ -185,10 +190,10 @@
             this.btnEditProfile.IdleFillColor = System.Drawing.Color.White;
             this.btnEditProfile.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnEditProfile.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnEditProfile.Location = new System.Drawing.Point(940, 223);
+            this.btnEditProfile.Location = new System.Drawing.Point(8, 21);
             this.btnEditProfile.Margin = new System.Windows.Forms.Padding(5);
             this.btnEditProfile.Name = "btnEditProfile";
-            this.btnEditProfile.Size = new System.Drawing.Size(177, 49);
+            this.btnEditProfile.Size = new System.Drawing.Size(184, 49);
             this.btnEditProfile.TabIndex = 12;
             this.btnEditProfile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -201,25 +206,25 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // bunifuCustomLabel1
+            // lblName
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(226, 12);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(167, 37);
-            this.bunifuCustomLabel1.TabIndex = 2;
-            this.bunifuCustomLabel1.Text = "Your Name";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(226, 12);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(167, 37);
+            this.lblName.TabIndex = 2;
+            this.lblName.Text = "Your Name";
             // 
-            // bunifuCustomLabel3
+            // lblUsername
             // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(389, 22);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(152, 25);
-            this.bunifuCustomLabel3.TabIndex = 4;
-            this.bunifuCustomLabel3.Text = "(your username)";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.lblUsername.Location = new System.Drawing.Point(389, 22);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(152, 25);
+            this.lblUsername.TabIndex = 4;
+            this.lblUsername.Text = "(your username)";
             // 
             // bunifuFlatButton1
             // 
@@ -255,15 +260,15 @@
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // bunifuCustomLabel7
+            // lblGender
             // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(229, 49);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(96, 21);
-            this.bunifuCustomLabel7.TabIndex = 10;
-            this.bunifuCustomLabel7.Text = "yourgender";
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lblGender.Location = new System.Drawing.Point(229, 49);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(96, 21);
+            this.lblGender.TabIndex = 10;
+            this.lblGender.Text = "yourgender";
             // 
             // btnBack
             // 
@@ -330,6 +335,24 @@
             this.bunifuCustomLabel4.TabIndex = 6;
             this.bunifuCustomLabel4.Text = "last updated at \r\n";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btnEditProfile);
+            this.groupBox4.Location = new System.Drawing.Point(923, 12);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(200, 251);
+            this.groupBox4.TabIndex = 14;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Menu";
+            // 
+            // txtAlamat
+            // 
+            this.txtAlamat.Location = new System.Drawing.Point(7, 25);
+            this.txtAlamat.Multiline = true;
+            this.txtAlamat.Name = "txtAlamat";
+            this.txtAlamat.Size = new System.Drawing.Size(637, 64);
+            this.txtAlamat.TabIndex = 0;
+            // 
             // ProfilePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,10 +365,13 @@
             this.profileCard.PerformLayout();
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -354,16 +380,16 @@
 
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuCards profileCard;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblUsername;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblEmail;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblName;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblGender;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblPhone;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEditProfile;
         private Bunifu.Framework.UI.BunifuThinButton2 btnBack;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -371,5 +397,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListView listView1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox txtAlamat;
     }
 }

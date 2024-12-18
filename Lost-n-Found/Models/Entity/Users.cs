@@ -8,17 +8,17 @@ namespace Lost_n_Found.Models.Entity
 {
     internal class Users
     {
-        public static int Id_User { get; set; }
-        public static string Name { get; set; }
-        public static string Username { get; set; }
-        public static string Password { get; set; }
-        public static string Email { get; set; }
-        public static string Address {  get; set; }
-        public static string Image_Profile { get; set; }
-        public static int Gender { get; set; }
-        public static string Phone { get; set; }
-        public static string Role { get; set; }
-        public static string reset_token { get; set; }
-        public static DateTime token_expiry { get; set; }
+        public int Id_User { get; set; }
+        public string Name { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+        public string Address {  get; set; }
+        public string Image_Profile { get; set; }
+        public int Gender { get; set; }
+        public string Phone { get; set; }
+        public string Role { get; set; }
+        public string reset_token { get; set; }
+        public DateTime token_expiry { get; set; }
     }
 }

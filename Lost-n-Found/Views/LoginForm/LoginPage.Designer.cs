@@ -30,11 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.loginCard = new Bunifu.Framework.UI.BunifuCards();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkRegister = new System.Windows.Forms.LinkLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.linkToken = new System.Windows.Forms.LinkLabel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtUsername = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -52,11 +51,10 @@
             this.loginCard.BorderRadius = 50;
             this.loginCard.BottomSahddow = true;
             this.loginCard.color = System.Drawing.Color.Transparent;
-            this.loginCard.Controls.Add(this.linkLabel1);
+            this.loginCard.Controls.Add(this.linkRegister);
             this.loginCard.Controls.Add(this.bunifuCustomLabel3);
             this.loginCard.Controls.Add(this.bunifuCustomLabel2);
             this.loginCard.Controls.Add(this.linkToken);
-            this.loginCard.Controls.Add(this.bunifuCustomLabel1);
             this.loginCard.Controls.Add(this.txtPassword);
             this.loginCard.Controls.Add(this.txtUsername);
             this.loginCard.Controls.Add(this.btnLogin);
@@ -68,16 +66,17 @@
             this.loginCard.Size = new System.Drawing.Size(512, 585);
             this.loginCard.TabIndex = 0;
             // 
-            // linkLabel1
+            // linkRegister
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(170, 386);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(77, 15);
-            this.linkLabel1.TabIndex = 8;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Register Here";
+            this.linkRegister.AutoSize = true;
+            this.linkRegister.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRegister.Location = new System.Drawing.Point(170, 386);
+            this.linkRegister.Name = "linkRegister";
+            this.linkRegister.Size = new System.Drawing.Size(77, 15);
+            this.linkRegister.TabIndex = 8;
+            this.linkRegister.TabStop = true;
+            this.linkRegister.Text = "Register Here";
+            this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegister_LinkClicked);
             // 
             // bunifuCustomLabel3
             // 
@@ -103,22 +102,13 @@
             // 
             this.linkToken.AutoSize = true;
             this.linkToken.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkToken.Location = new System.Drawing.Point(134, 338);
+            this.linkToken.Location = new System.Drawing.Point(37, 335);
             this.linkToken.Name = "linkToken";
             this.linkToken.Size = new System.Drawing.Size(100, 15);
             this.linkToken.TabIndex = 4;
             this.linkToken.TabStop = true;
-            this.linkToken.Text = "Send Reset Token";
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(37, 338);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(100, 15);
-            this.bunifuCustomLabel1.TabIndex = 5;
-            this.bunifuCustomLabel1.Text = "Forgot Password?";
+            this.linkToken.Text = "Forgot Password?";
+            this.linkToken.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkToken_LinkClicked);
             // 
             // txtPassword
             // 
@@ -208,7 +198,6 @@
             this.loginPanel.Quality = 10;
             this.loginPanel.Size = new System.Drawing.Size(1264, 681);
             this.loginPanel.TabIndex = 1;
-            this.loginPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.loginPanel_Paint);
             // 
             // LoginPage
             // 
@@ -233,9 +222,8 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPassword;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtUsername;
         private System.Windows.Forms.LinkLabel linkToken;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkRegister;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
     }
 }
