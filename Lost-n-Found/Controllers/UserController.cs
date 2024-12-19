@@ -12,6 +12,8 @@ using System.Xml.Linq;
 using System.Windows.Forms;
 using Lost_n_Found.Models.Repository;
 using Lost_n_Found.Models.Database;
+using System.IO;
+using System.Drawing;
 
 namespace Lost_n_Found.Controllers
 {
@@ -85,52 +87,44 @@ namespace Lost_n_Found.Controllers
             var confirmResult = MessageBox.Show("Are you sure want to Logout?", "Logout", MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                CurrentUser.UserId = null;
-                CurrentUser.Username = null;
-                CurrentUser.Email = null;
+                CurrentUser.UserId      = "";
+                CurrentUser.Username    = "";
+                CurrentUser.Password    = "";
+                CurrentUser.Name        = "";
+                CurrentUser.Email       = "";
+                CurrentUser.Address     = "";
+                CurrentUser.Image       = "";
+                CurrentUser.Gender      = "";
+                CurrentUser.Phone       = "";
                 result = true;
             }
             return result;
         }
 
-        public void UserImage()
+
+        // Load Image
+        public string LoadUserImage()
         {
-            string userImage;
-            string defaultImage = "default.jpg";
+            string defaultImage = "default.jpg"; // default gambar
+            string imagesFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images"); // Folder gambar
 
-            // Ambil nama file dari database
-            conn.OpenConnection();
-            MySqlConnection connect = conn.GetConnection();
+            return userRepository.UserImage(defaultImage, imagesFolder);
+        }
 
-            string query = "SELECT image_profile FROM users WHERE id_user = @UserId";
-            MySqlCommand cmd = new MySqlCommand(query, connect);
-            cmd.Parameters.AddWithValue("@UserId", CurrentUser.UserId);
+        public void UpdateUserImage(string sourceFile)
+        {
+            // di bagian profile bisa ditambah ini:
+            // openProfilePicture.Filter = "Image File|*.jpg;*.jpeg;*.png;*.bmp";
 
-            using (MySqlDataReader reader = cmd.ExecuteReader())
-            {
-                if (reader.Read())
-                {
-                    userImage = reader["image_profile"].ToString();
-                }
-                else
-                {
-                    userImage = defaultImage; // Jika tidak ditemukan, gunakan default
-                }
-            }
-            conn.CloseConnection();
+            // string sourceFile = openProfilePicture.FileName; // Path asli file
 
-            // Path file gambar
-            //string userPhotoPath = Path.Combine(imagesFolder, userPhotoFileName);
+            string imagesFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images"); // Folder gambar
+            string newFileName = Guid.NewGuid().ToString() + Path.GetExtension(sourceFile); // Nama file unik
+            string destinationFile = Path.Combine(imagesFolder, newFileName);
 
-            // Jika file tidak ditemukan, gunakan default
-            //if (!File.Exists(userPhotoPath))
-            //{
-            //    userPhotoPath = Path.Combine(imagesFolder, defaultPhoto);
-            //}
+            userRepository.AddImage(sourceFile, newFileName, destinationFile);
 
-            // Tampilkan foto
-            //pbUser.Image = Image.FromFile(userPhotoPath);
-            //pbUser.SizeMode = PictureBoxSizeMode.StretchImage;
+            MessageBox.Show("Profile photo updated successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

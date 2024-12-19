@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.homePanel = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelHomeContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.btnLogout = new Guna.UI.WinForms.GunaButton();
             this.btnProfile = new Bunifu.Framework.UI.BunifuImageButton();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.panelHomeContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.homePanel.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnProfile)).BeginInit();
@@ -57,6 +57,15 @@
             this.homePanel.Size = new System.Drawing.Size(1264, 681);
             this.homePanel.TabIndex = 0;
             // 
+            // panelHomeContainer
+            // 
+            this.panelHomeContainer.AutoScroll = true;
+            this.panelHomeContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHomeContainer.Location = new System.Drawing.Point(0, 110);
+            this.panelHomeContainer.Name = "panelHomeContainer";
+            this.panelHomeContainer.Size = new System.Drawing.Size(1264, 571);
+            this.panelHomeContainer.TabIndex = 1;
+            // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
@@ -74,6 +83,17 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1264, 110);
             this.bunifuGradientPanel1.TabIndex = 0;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(19, 38);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(186, 37);
+            this.gunaLabel1.TabIndex = 1;
+            this.gunaLabel1.Text = "Lost N Found";
             // 
             // btnLogout
             // 
@@ -106,34 +126,14 @@
             this.btnProfile.BackColor = System.Drawing.Color.White;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageActive = null;
-            this.btnProfile.Location = new System.Drawing.Point(1040, 21);
+            this.btnProfile.Location = new System.Drawing.Point(1040, 15);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(71, 71);
+            this.btnProfile.Size = new System.Drawing.Size(71, 79);
             this.btnProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnProfile.TabIndex = 0;
             this.btnProfile.TabStop = false;
             this.btnProfile.Zoom = 10;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(19, 38);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(186, 37);
-            this.gunaLabel1.TabIndex = 1;
-            this.gunaLabel1.Text = "Lost N Found";
-            // 
-            // panelHomeContainer
-            // 
-            this.panelHomeContainer.AutoScroll = true;
-            this.panelHomeContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHomeContainer.Location = new System.Drawing.Point(0, 110);
-            this.panelHomeContainer.Name = "panelHomeContainer";
-            this.panelHomeContainer.Size = new System.Drawing.Size(1264, 571);
-            this.panelHomeContainer.TabIndex = 1;
             // 
             // HomePage
             // 
@@ -142,6 +142,7 @@
             this.Controls.Add(this.homePanel);
             this.Name = "HomePage";
             this.Size = new System.Drawing.Size(1264, 681);
+            this.Load += new System.EventHandler(this.HomePage_Load);
             this.homePanel.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();

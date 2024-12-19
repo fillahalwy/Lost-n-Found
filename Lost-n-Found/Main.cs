@@ -40,6 +40,12 @@ namespace Lost_n_Found
             sendToken.ShowResetPass += () => loadView(resetPass);
 
             homePage.ShowLogin += () => loadView(login);
+            homePage.ShowProfile += () => loadView(profilePage);
+
+            profilePage.ShowLogin += () => loadView(login);
+            profilePage.ShowHomepage += () => loadView(homePage);
+
+            profilePage.UpdateImage += homePage.UpdateProfileImage;
 
             if (userController.IsLogin())
             {

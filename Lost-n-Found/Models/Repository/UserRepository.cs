@@ -12,6 +12,7 @@ using Microsoft.VisualBasic.ApplicationServices;
 using System.Data.Common;
 using System.Net.Mail;
 using System.Net;
+using System.IO;
 
 namespace Lost_n_Found.Models.Repository
 {
@@ -108,7 +109,13 @@ namespace Lost_n_Found.Models.Repository
                 {
                     CurrentUser.UserId = reader["id_user"].ToString();
                     CurrentUser.Username = reader["username"].ToString();
+                    CurrentUser.Password = reader["password"].ToString();
+                    CurrentUser.Name = reader["name"].ToString();
                     CurrentUser.Email = reader["email"].ToString();
+                    CurrentUser.Address = reader["address"].ToString();
+                    CurrentUser.Image = reader["image_profile"].ToString();
+                    CurrentUser.Gender = reader["gender"].ToString();
+                    CurrentUser.Phone = reader["phone"].ToString();
 
                     result = true;
                 }
@@ -121,7 +128,7 @@ namespace Lost_n_Found.Models.Repository
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.Print("Get User and Pass Error: {0}", ex.Message);
-                //MessageBox.Show($"Error: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}");
             }
             finally
             {
@@ -131,7 +138,6 @@ namespace Lost_n_Found.Models.Repository
         }
 
         // Read data user
-
 
 
         public void GenerateSendToken(string email)
@@ -279,6 +285,128 @@ namespace Lost_n_Found.Models.Repository
                 conn.CloseConnection();
             }
         }
+
+        public string UserImage(string defaultImage, string imagesFolder)
+        {
+            string userImage;
+            if(CurrentUser.Image == null)
+            {
+                userImage = defaultImage;
+            }
+            else
+            {
+                userImage = CurrentUser.Image.ToString();
+            }
+            // Ambil nama file dari database
+            //conn.OpenConnection();
+            //MySqlConnection connect = conn.GetConnection();
+
+            //string query = "SELECT image_profile FROM users WHERE id_user = @UserId";
+            //MySqlCommand cmd = new MySqlCommand(query, connect);
+            //cmd.Parameters.AddWithValue("@UserId", CurrentUser.UserId);
+
+            //using (MySqlDataReader reader = cmd.ExecuteReader())
+            //{
+            //    if (reader.Read())
+            //    {
+            //        userImage = reader["image_profile"].ToString();
+            //    }
+            //    else
+            //    {
+            //        userImage = defaultImage; // Jika tidak ditemukan, gunakan default
+            //    }
+            //}
+            //conn.CloseConnection();
+
+
+            // Path file gambar
+            string userPhotoPath = Path.Combine(imagesFolder, userImage);
+
+            // Jika file tidak ditemukan, gunakan default
+            if (!File.Exists(userPhotoPath))
+            {
+                userPhotoPath = Path.Combine(imagesFolder, defaultImage);
+            }
+
+            return userPhotoPath;
+        }
+
+        public void AddImage(string sourceFile, string newFileName, string destinationFile)
+        {
+
+            // Simpan file baru
+            File.Copy(sourceFile, destinationFile);
+
+            // Hapus foto lama (jika ada)
+            //DeletePreviousPhoto();
+
+            // Simpan nama file baru ke database
+            conn.OpenConnection();
+            MySqlConnection connect = conn.GetConnection();
+
+            string query = "UPDATE users SET image_profile = @FileName WHERE id_user = @UserId";
+            MySqlCommand cmd = new MySqlCommand(query, connect);
+            cmd.Parameters.AddWithValue("@FileName", newFileName);
+            cmd.Parameters.AddWithValue("@UserId", CurrentUser.UserId);
+            cmd.ExecuteNonQuery();
+
+            conn.CloseConnection();
+        }
+
+        //private void DeletePreviousPhoto(string imagesFolder)
+        //{
+        //    string previousPhotoFileName;
+
+        //    // Ambil nama file lama dari database
+        //    conn.OpenConnection();
+        //    MySqlConnection connect = conn.GetConnection();
+
+        //    string query = "SELECT image_profile FROM users WHERE id_user = @UserId";
+        //    MySqlCommand cmd = new MySqlCommand(query, connect);
+        //    cmd.Parameters.AddWithValue("@UserId", CurrentUser.UserId);
+
+        //    using (MySqlDataReader reader = cmd.ExecuteReader())
+        //    {
+        //        if (reader.Read())
+        //        {
+        //            previousPhotoFileName = reader["image_profile"].ToString();
+        //        }
+        //        else
+        //        {
+        //            conn.CloseConnection();
+        //            return;
+        //        }
+        //    }
+        //    conn.CloseConnection();
+
+        //    // Jangan hapus foto default
+        //    if (previousPhotoFileName == "default.jpeg")
+        //        return;
+
+        //    // Path file lama
+        //    string previousPhotoPath = Path.Combine(imagesFolder, previousPhotoFileName);
+
+        //    // Hapus file lama jika ada
+        //    if (File.Exists(previousPhotoPath))
+        //    {
+        //        try
+        //        {
+        //            // Dispose gambar dari PictureBox jika masih digunakan
+        //            if (pbUser.Image != null)
+        //            {
+        //                pbUser.Image.Dispose();
+        //                pbUser.Image = null;
+        //            }
+
+        //            // Hapus file
+        //            File.Delete(previousPhotoPath);
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            MessageBox.Show($"Error deleting previous photo: {ex.Message}");
+        //        }
+        //    }
+        //}
 
     }
 }

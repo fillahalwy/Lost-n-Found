@@ -11,12 +11,12 @@ using Lost_n_Found.Models.Entity;
 using Lost_n_Found.Models.Database;
 using Lost_n_Found.Controllers;
 using Lost_n_Found.Models.Repository;
+using Lost_n_Found.Views.LoginForm;
 
 namespace Lost_n_Found.Views.Home
 {
     public partial class HomePage : UserControl
     {
-        DatabaseConnection conn = new DatabaseConnection();
         UserController userController = new UserController();
 
         public event Action ShowLogin;
@@ -26,6 +26,11 @@ namespace Lost_n_Found.Views.Home
         {
             InitializeComponent();
             LoadItems();
+        }
+        private void HomePage_Load(object sender, EventArgs e)
+        {
+            btnProfile.Image = Image.FromFile(userController.LoadUserImage());
+            btnProfile.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -47,9 +52,18 @@ namespace Lost_n_Found.Views.Home
         //    WrapContents = true
         //};
 
+        private void LoadUserProfileImage()
+        {
+            string profileImagePath = userController.LoadUserImage();
+            btnProfile.Image = Image.FromFile(profileImagePath);
+            btnProfile.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
 
+        public void UpdateProfileImage()
+        {
+            LoadUserProfileImage();
+        }
 
-        
         private void LoadItems()
         {
             List<Items> items = ItemRepository.GetAllItems();
