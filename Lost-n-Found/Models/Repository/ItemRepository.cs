@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Lost_n_Found.Models.Entity;
-using System.Collections.Generic;
-using Lost_n_Found.Models.Database;
 using System.Data.SqlClient;
 using Lost_n_Found.Controllers;
 using MySql.Data.MySqlClient;
@@ -13,12 +10,19 @@ using MySqlX.XDevAPI.Common;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using Google.Protobuf.WellKnownTypes;
 using Microsoft.VisualBasic;
+using Lost_n_Found.Views.Home;
+using Lost_n_Found.Models.Entity;
+using Lost_n_Found.Models.Database;
+using Microsoft.VisualBasic.ApplicationServices;
+using System.Windows;
+using System.Windows.Forms;
+using MessageBox = System.Windows.MessageBox;
 
 namespace Lost_n_Found.Models.Repository
 {
     internal class ItemRepository
     {
-
+        DatabaseConnection conn = new DatabaseConnection();
         public static List<Items> GetAllItems()
         {
             List<Items> items = new List<Items>();
@@ -53,6 +57,42 @@ namespace Lost_n_Found.Models.Repository
                 }
                 return items;
             } 
+        }
+
+        public int AddItem(Items item)
+        {
+            int result = 0;
+            try
+            {
+                // koneksi database
+                conn.OpenConnection();
+                MySqlConnection connection = conn.GetConnection();
+
+                // memasukkan data ke database
+                string query = "INSERT INTO items (id_user, id_category, item_name, item_img, item_description, item_date, item_location, item_note, item_type, item_status) values (@user,@category,@image,@description,@date,@location,@type,@status)";
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@user", CurrentUser.UserId);
+                cmd.Parameters.AddWithValue("@category", item.Id_category);
+                cmd.Parameters.AddWithValue("@image", item.Item_img);
+                cmd.Parameters.AddWithValue("@description", item.Item_description);
+                cmd.Parameters.AddWithValue("@date", item.Item_date);
+                cmd.Parameters.AddWithValue("@location", item.Item_location);
+                cmd.Parameters.AddWithValue("@type", item.Item_type);
+                cmd.Parameters.AddWithValue("@status", item.Item_status);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Item Successfully Added", "Information", (MessageBoxButton)MessageBoxButtons.OK, (MessageBoxImage)MessageBoxIcon.Information);
+
+                result = 1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+            finally
+            {
+                conn.CloseConnection();
+            }
+            return result;
         }
     }
 }

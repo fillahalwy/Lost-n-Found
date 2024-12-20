@@ -159,23 +159,17 @@
     <Compile Include="Views\DashboardAdmin\DashboardPage.Designer.cs">
       <DependentUpon>DashboardPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Home\AddItems.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Views\Home\AddItem.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Home\AddItems.Designer.cs">
-      <DependentUpon>AddItems.cs</DependentUpon>
+    <Compile Include="Views\Home\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Home\DetailItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\Home\DetailItem.Designer.cs">
       <DependentUpon>DetailItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Home\EditItem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Home\EditItem.Designer.cs">
-      <DependentUpon>EditItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Home\HomePage.cs">
       <SubType>UserControl</SubType>
@@ -233,6 +227,9 @@
     </Compile>
     <EmbeddedResource Include="Views\DashboardAdmin\DashboardPage.resx">
       <DependentUpon>DashboardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Home\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Home\DetailItem.resx">
       <DependentUpon>DetailItem.cs</DependentUpon>

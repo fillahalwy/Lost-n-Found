@@ -67,3 +67,4 @@ E:\AMIKOM\Sem 3\Pemrograman Lanjut\UTS & UAS\FinalProject\Lost-n-Found\bin\Debug
 E:\AMIKOM\Sem 3\Pemrograman Lanjut\UTS & UAS\FinalProject\Lost-n-Found\bin\Debug\System.ValueTuple.xml
 E:\AMIKOM\Sem 3\Pemrograman Lanjut\UTS & UAS\FinalProject\Lost-n-Found\obj\Debug\Lost_n_Found.Views.LoginForm.UpdateProfile.resources
 E:\AMIKOM\Sem 3\Pemrograman Lanjut\UTS & UAS\FinalProject\Lost-n-Found\obj\Debug\Lost_n_Found.Views.LoginForm.ProfilePage.resources
+E:\AMIKOM\Sem 3\Pemrograman Lanjut\UTS & UAS\FinalProject\Lost-n-Found\obj\Debug\Lost_n_Found.Views.Home.AddItem.resources

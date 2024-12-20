@@ -35,6 +35,7 @@
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.btnLogout = new Guna.UI.WinForms.GunaButton();
             this.btnProfile = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnAdd = new Guna.UI.WinForms.GunaButton();
             this.homePanel.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnProfile)).BeginInit();
@@ -70,6 +71,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnAdd);
             this.bunifuGradientPanel1.Controls.Add(this.gunaLabel1);
             this.bunifuGradientPanel1.Controls.Add(this.btnLogout);
             this.bunifuGradientPanel1.Controls.Add(this.btnProfile);
@@ -106,7 +108,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = null;
             this.btnLogout.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLogout.Location = new System.Drawing.Point(1131, 38);
+            this.btnLogout.Location = new System.Drawing.Point(1158, 38);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLogout.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -126,7 +128,7 @@
             this.btnProfile.BackColor = System.Drawing.Color.White;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageActive = null;
-            this.btnProfile.Location = new System.Drawing.Point(1040, 15);
+            this.btnProfile.Location = new System.Drawing.Point(1067, 15);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(71, 79);
             this.btnProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -134,6 +136,28 @@
             this.btnProfile.TabStop = false;
             this.btnProfile.Zoom = 10;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.AnimationHoverSpeed = 0.07F;
+            this.btnAdd.AnimationSpeed = 0.03F;
+            this.btnAdd.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnAdd.BorderColor = System.Drawing.Color.Black;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Image = null;
+            this.btnAdd.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnAdd.Location = new System.Drawing.Point(291, 0);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnAdd.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAdd.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAdd.OnHoverImage = null;
+            this.btnAdd.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAdd.Size = new System.Drawing.Size(165, 110);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "ADD ITEM";
+            this.btnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // HomePage
             // 
@@ -159,5 +183,6 @@
         private Guna.UI.WinForms.GunaButton btnLogout;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private System.Windows.Forms.FlowLayoutPanel panelHomeContainer;
+        private Guna.UI.WinForms.GunaButton btnAdd;
     }
 }

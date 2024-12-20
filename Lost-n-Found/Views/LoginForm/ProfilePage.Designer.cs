@@ -182,6 +182,7 @@
             this.txtAddress.Location = new System.Drawing.Point(7, 25);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
+            this.txtAddress.ReadOnly = true;
             this.txtAddress.Size = new System.Drawing.Size(637, 64);
             this.txtAddress.TabIndex = 0;
             // 

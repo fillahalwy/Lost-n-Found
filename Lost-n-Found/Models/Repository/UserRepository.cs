@@ -13,6 +13,7 @@ using System.Data.Common;
 using System.Net.Mail;
 using System.Net;
 using System.IO;
+using Microsoft.VisualBasic;
 
 namespace Lost_n_Found.Models.Repository
 {
@@ -74,7 +75,7 @@ namespace Lost_n_Found.Models.Repository
                 cmd.Parameters.AddWithValue("@phone", user.Phone);
 
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Registration Success");
+                MessageBox.Show("Registration Success", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 result = 1;
             }
@@ -172,7 +173,7 @@ namespace Lost_n_Found.Models.Repository
                 updateCmd.ExecuteNonQuery();
 
                 SendEmail(email, resetToken);
-                MessageBox.Show("Reset Token Sent to Your Email");
+                MessageBox.Show("Reset Token Sent to Your Email", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -274,7 +275,7 @@ namespace Lost_n_Found.Models.Repository
                 cmd.Parameters.AddWithValue("@Email", email);
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Password successfully reset.");
+                MessageBox.Show("Password successfully reset.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

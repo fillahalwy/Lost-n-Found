@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Lost_n_Found.Views.Home
 {
-    public partial class EditItem : Form
+    public partial class AddItem : UserControl
     {
-        public EditItem()
+        public AddItem()
         {
             InitializeComponent();
         }
+
     }
 }

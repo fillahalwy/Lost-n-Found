@@ -90,7 +90,7 @@ namespace Lost_n_Found.Views.Home
                 {
                     Size = new Size(200, 300),
                     BorderStyle = BorderStyle.FixedSingle,
-                    Margin = new Padding(10)
+                    Margin = new Padding(50)
                 };
 
                 PictureBox pictureBox = new PictureBox

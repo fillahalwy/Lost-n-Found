@@ -20,7 +20,6 @@ namespace Lost_n_Found.Controllers
 
     internal class UserController
     {
-        DatabaseConnection conn = new DatabaseConnection();
         UserRepository userRepository = new UserRepository();
 
         // cek session
@@ -87,15 +86,7 @@ namespace Lost_n_Found.Controllers
             var confirmResult = MessageBox.Show("Are you sure want to Logout?", "Logout", MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                CurrentUser.UserId      = "";
-                CurrentUser.Username    = "";
-                CurrentUser.Password    = "";
-                CurrentUser.Name        = "";
-                CurrentUser.Email       = "";
-                CurrentUser.Address     = "";
-                CurrentUser.Image       = "";
-                CurrentUser.Gender      = "";
-                CurrentUser.Phone       = "";
+                CurrentUser.ClearUser();
                 result = true;
             }
             return result;
