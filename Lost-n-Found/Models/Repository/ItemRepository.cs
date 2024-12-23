@@ -17,6 +17,8 @@ using Microsoft.VisualBasic.ApplicationServices;
 using System.Windows;
 using System.Windows.Forms;
 using MessageBox = System.Windows.MessageBox;
+using System.Diagnostics;
+using System.IO;
 
 namespace Lost_n_Found.Models.Repository
 {
@@ -46,7 +48,7 @@ namespace Lost_n_Found.Models.Repository
                         Item_name = reader["item_name"].ToString(),
                         Item_img = reader["item_img"].ToString(),
                         Item_description = reader["item_description"].ToString(),
-                        Item_date = reader["item_date"].ToString(),
+                        Item_date = (DateTime)reader["item_date"],
                         Item_location = reader["item_location"].ToString(),
                         Item_note = reader["item_note"].ToString(),
                         Item_type = reader["item_type"].ToString(),
@@ -59,6 +61,37 @@ namespace Lost_n_Found.Models.Repository
             } 
         }
 
+        public List<Category> GetCategories()
+        {
+            List<Category> categories = new List<Category>();
+
+            string query = "SELECT id_category, category FROM items_category";
+            MySqlConnection connect = conn.GetConnection();
+
+            try
+            {
+                conn.OpenConnection();
+                MySqlCommand cmd = new MySqlCommand(query, connect);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read()) 
+                {
+
+                    categories.Add(new Category
+                    {
+                        Id = int.Parse(reader["id_category"].ToString()),
+                        Name = reader["category"].ToString()
+                    });
+
+                }
+            }
+            finally
+            {
+                conn.CloseConnection();
+            }
+            return categories;
+        }
+
         public int AddItem(Items item)
         {
             int result = 0;
@@ -68,20 +101,23 @@ namespace Lost_n_Found.Models.Repository
                 conn.OpenConnection();
                 MySqlConnection connection = conn.GetConnection();
 
+
                 // memasukkan data ke database
-                string query = "INSERT INTO items (id_user, id_category, item_name, item_img, item_description, item_date, item_location, item_note, item_type, item_status) values (@user,@category,@image,@description,@date,@location,@type,@status)";
+                string query = "INSERT INTO items (id_user, id_category, item_name, item_img, item_description, item_date, item_location, item_note, item_type, item_status) values (@user, @category , @name, @image, @description, @date, @location, @note, @type, @status)";
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@user", CurrentUser.UserId);
                 cmd.Parameters.AddWithValue("@category", item.Id_category);
+                cmd.Parameters.AddWithValue("@name", item.Item_name);
                 cmd.Parameters.AddWithValue("@image", item.Item_img);
                 cmd.Parameters.AddWithValue("@description", item.Item_description);
                 cmd.Parameters.AddWithValue("@date", item.Item_date);
                 cmd.Parameters.AddWithValue("@location", item.Item_location);
+                cmd.Parameters.AddWithValue("@note", item.Item_note);
                 cmd.Parameters.AddWithValue("@type", item.Item_type);
                 cmd.Parameters.AddWithValue("@status", item.Item_status);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Item Successfully Added", "Information", (MessageBoxButton)MessageBoxButtons.OK, (MessageBoxImage)MessageBoxIcon.Information);
-
+                //MessageBox.Show($"user : {CurrentUser.UserId}, nama item: {item.Item_name}, {item.Item_description}, {item.Item_date}, {item.Item_location}, {item.Item_note}, {item.Item_type}, {item.Item_status}");
                 result = 1;
             }
             catch (Exception ex)
@@ -94,5 +130,6 @@ namespace Lost_n_Found.Models.Repository
             }
             return result;
         }
+
     }
 }

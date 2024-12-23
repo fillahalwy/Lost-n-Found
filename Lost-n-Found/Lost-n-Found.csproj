@@ -147,6 +147,7 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Database\DatabaseConnection.cs" />
+    <Compile Include="Models\Entity\Category.cs" />
     <Compile Include="Models\Entity\Items.cs" />
     <Compile Include="Models\Entity\Users.cs" />
     <Compile Include="Models\Repository\ItemRepository.cs" />

@@ -25,6 +25,7 @@ namespace Lost_n_Found
         private ProfilePage profilePage = new ProfilePage();
         private DetailItem detailItem = new DetailItem();
         private SendToken sendToken = new SendToken();
+        private AddItem addItem = new AddItem();
 
         public Main()
         {
@@ -41,6 +42,7 @@ namespace Lost_n_Found
 
             homePage.ShowLogin += () => loadView(login);
             homePage.ShowProfile += () => loadView(profilePage);
+            homePage.ShowAddItem += () => loadView(addItem);
 
             profilePage.ShowLogin += () => loadView(login);
             profilePage.ShowHomepage += () => loadView(homePage);

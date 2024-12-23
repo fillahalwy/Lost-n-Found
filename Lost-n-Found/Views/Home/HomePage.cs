@@ -21,6 +21,7 @@ namespace Lost_n_Found.Views.Home
 
         public event Action ShowLogin;
         public event Action ShowProfile;
+        public event Action ShowAddItem;
 
         public HomePage()
         {
@@ -146,5 +147,9 @@ namespace Lost_n_Found.Views.Home
             // Implementasi untuk membuka detail item
         }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            ShowAddItem?.Invoke();
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace Lost_n_Found.Models.Entity
         public string Item_name { get; set; }
         public string Item_img { get; set; }
         public string Item_description { get; set; }
-        public string Item_date { get; set; }
+        public DateTime Item_date { get; set; }
         public string Item_location { get; set; }
         public string Item_note { get; set; }
         public string Item_type { get; set; }

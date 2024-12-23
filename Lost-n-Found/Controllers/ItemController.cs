@@ -2,90 +2,50 @@
 using Lost_n_Found.Models.Repository;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Lost_n_Found.Controllers
 {
     internal class ItemController
     {
-        //private void LoadItems()
-        //{
-        //    List<Items> items = ItemRepository.GetAllItems();
-        //    panelHomeContainer.Controls.Clear(); // Bersihkan panel sebelum menambahkan data
+        private ItemRepository itemRepository = new ItemRepository();
 
-        //    if (items.Count == 0)
-        //    {
-        //        Label noDataLabel = new Label
-        //        {
-        //            Text = "Data tidak ada.",
-        //            AutoSize = true,
-        //            Font = new Font("Arial", 16, FontStyle.Bold),
-        //            ForeColor = Color.Gray,
-        //            Dock = DockStyle.Top,
-        //            TextAlign = ContentAlignment.MiddleCenter
-        //        };
-        //        panelHomeContainer.Controls.Add(noDataLabel);
-        //        return;
-        //    }
+        public List<Category> GetCategoryList()
+        {
+            return itemRepository.GetCategories();
+        }
 
-        //    foreach (var item in items)
-        //    {
-        //        Panel card = new Panel
-        //        {
-        //            Size = new Size(200, 300),
-        //            BorderStyle = BorderStyle.FixedSingle,
-        //            Margin = new Padding(10)
-        //        };
 
-        //        PictureBox pictureBox = new PictureBox
-        //        {
-        //            Size = new Size(180, 180),
-        //            Location = new Point(10, 10),
-        //            //Image = File.Exists(item.Item_img) ? Image.FromFile(item.ImagePath) : Properties.Resources.DefaultImage,
-        //            SizeMode = PictureBoxSizeMode.Zoom
-        //        };
+        public int AddItem(Items item)
+        {
+            int result = 0;
+            if (string.IsNullOrWhiteSpace(item.Item_name) ||
+                string.IsNullOrWhiteSpace(item.Item_description) ||
+                item.Item_date == null ||
+                string.IsNullOrWhiteSpace(item.Item_location) || 
+                string.IsNullOrWhiteSpace(item.Item_note) ||
+                string.IsNullOrWhiteSpace(item.Item_type) ||
+                string.IsNullOrWhiteSpace(item.Item_status))
+            {
+                MessageBox.Show("Please input all data!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show($"data : {item.Item_name}, {item.Item_description}, {item.Item_date}, {item.Item_location}, {item.Item_note}, {item.Item_type}, {item.Item_status}");
+            }
+            itemRepository.AddItem(item);
 
-        //        Label nameLabel = new Label
-        //        {
-        //            Text = item.Item_name,
-        //            Location = new Point(10, 200),
-        //            AutoSize = true,
-        //            Font = new Font("Arial", 10, FontStyle.Bold)
-        //        };
+            //MessageBox.Show("Item Added successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-        //        Label descriptionLabel = new Label
-        //        {
-        //            Text = item.Item_description,
-        //            Location = new Point(10, 220),
-        //            AutoSize = true,
-        //            Font = new Font("Arial", 8),
-        //            ForeColor = Color.Gray
-        //        };
-
-        //        LinkLabel detailLink = new LinkLabel
-        //        {
-        //            Text = "View Details",
-        //            Location = new Point(10, 260),
-        //            AutoSize = true,
-        //            Tag = item.Id_item // Simpan ID untuk digunakan saat diklik
-        //        };
-        //        detailLink.Click += (s, e) => ViewDetails((int)((LinkLabel)s).Tag);
-
-        //        card.Controls.Add(pictureBox);
-        //        card.Controls.Add(nameLabel);
-        //        card.Controls.Add(descriptionLabel);
-        //        card.Controls.Add(detailLink);
-
-        //        panelHomeContainer.Controls.Add(card);
-        //        panelHomeContainer.AutoScroll = true;
-        //        panelHomeContainer.WrapContents = true; // Menjadikan layout membungkus ke baris baru jika melebihi lebar panel
-        //        panelHomeContainer.FlowDirection = FlowDirection.LeftToRight;
-
-        //    }
-        //}
+            // Jika data berhasil disimpan
+            if (result > 0)
+            {
+                MessageBox.Show("Successfully Saved Data !", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return result;
+        }
     }
 }
